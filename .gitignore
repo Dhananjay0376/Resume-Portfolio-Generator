@@ -1,0 +1,15 @@
+# Secrets
+.env
+
+# Generated output
+portfolio.html
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS/editor
+.DS_Store
+.vscode/
