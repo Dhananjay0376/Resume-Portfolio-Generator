@@ -97,6 +97,13 @@ This project keeps the API credentials secure by using environment variables.
 > [!IMPORTANT]
 > The Flask web server runs on local loopback (`127.0.0.1`) only. It does **not** provide multi-user session isolation and must not be exposed to the public internet.
 
+### Option C: Pure Client-Side Generator (Browser Only)
+1. Double-click or open [`generator.html`](file:///d:/resume-portfolio-generator/generator.html) in any web browser.
+2. Enter your Gemini API key from [Google AI Studio](https://aistudio.google.com/apikey). (It is securely processed in the client browser only and optionally saved locally).
+3. Drag and drop your `.pdf` or `.txt` resume file, or paste its text.
+4. Click **Generate Portfolio** to preview the rendered layout instantly inside the interactive preview pane.
+5. Click **Download Portfolio** to save your custom `portfolio.html` file.
+
 ---
 
 ## 📝 Prompt Design & AI Control
@@ -157,6 +164,7 @@ resume-portfolio-generator/
 ├── .env.example             # Configuration template for local API keys
 ├── .gitignore               # Excludes secrets (.env) and Python artifacts (venv)
 ├── app.py                   # Local Flask GUI entry point (supports PDF upload)
+├── generator.html           # Client-side generator app (PDF parse + Gemini call in browser)
 ├── main.py                  # CLI entry point (converts resume.txt -> portfolio.html)
 ├── pipeline.py              # Shared orchestration, validation, API logic, and rendering
 ├── portfolio.html           # The generated web portfolio output file
