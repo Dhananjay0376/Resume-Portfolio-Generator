@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+app.py
+main.py
+pipeline.py
+requirements.txt
+resume.txt
+template.html
+templates/
+.env
+.env.example
+.git/
+.gitignore
